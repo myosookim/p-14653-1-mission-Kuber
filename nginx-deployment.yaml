@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3              # ⭐ Pod를 3개 유지
+  replicas: 2              # ⭐ Pod를 n개 유지. 값 수정 후 적용 가능(예: 5->2)
   selector:                # ⭐ 관리할 Pod를 찾는 조건
     matchLabels:
       app: nginx
