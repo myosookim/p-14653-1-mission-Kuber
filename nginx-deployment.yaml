@@ -26,3 +26,9 @@ spec:
             limits:
               memory: "128Mi"
               cpu: "200m"
+## 롤링 업데이트 동작
+#  strategy:
+#    type: RollingUpdate
+#    rollingUpdate:
+#      maxSurge: 1        # 동시에 추가로 만들 수 있는 Pod 수
+#      maxUnavailable: 0  # 동시에 중단될 수 있는 Pod 수
